@@ -6,8 +6,8 @@ s=[
     'ちゃんとプログラミングして'
 ]
 a=[]
-for i in range(len(s)):
-    a.append(int(input(s[i]+'ますか？>')))
-for i in range(len(s)):
-    if a[i] == 0:
-        print(s[i])
+for message in s:
+    if input(message+'ますか？>')=='0':
+        a.append(message)
+for message in a:
+    print(message)
